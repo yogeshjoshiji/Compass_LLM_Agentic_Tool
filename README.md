@@ -163,8 +163,9 @@ This approach allows us to:
 
 While a centralized MCP-based architecture may offer long-term advantages, building it now would **delay impact** and **increase risk**. We will **reassess the need for a centralized orchestration layer in 12 months**, based on adoption, usage patterns, and governance needs.
 
+**Natural Language to SQL**:
 
-![AI Architecture](docs/Compass dev Tolling.drawio.svg)
+![AI Architecture](docs/Compass_dev_Tooling.drawio.svg)
 
 ---
 ## Component Design <a name="component-design"></a>
@@ -177,14 +178,15 @@ While a centralized MCP-based architecture may offer long-term advantages, build
 ---
 ## Contract Design <a name="contract-design"></a>
 
+TBD
 ---
 ## Integration Design <a name="integration-design"></a>
 
-| System       | Method     | Authentication          | Rate Limit |
-|--------------|------------|-------------------------|------------|
-| GitHub       | Webhooks   | OAuth2 + IP Whitelisting | 5000/hr   |
-| Jira         | REST API   | API Key                 | 200/min    |
-| Confluence   | Graph API  | Certificate Auth        | 100/min    |
+| System       | Method              | Authentication          | Rate Limit |
+|--------------|---------------------|-------------------------|------------|
+| GitHub       | Webhooks/REST API   | OAuth2 + IP Whitelisting | 5000/hr   |
+| Jira         | REST API            | API Key                 | 200/min    |
+| Confluence   | Graph API           | Certificate Auth        | 100/min    |
 
 ---
 
@@ -200,7 +202,7 @@ While a centralized MCP-based architecture may offer long-term advantages, build
 | State       | Encryption           | Key Management          |
 |-------------|----------------------|-------------------------|
 | Transit     | TLS 1.3              | Istio                   |
-| At Rest     | AES-256              | AWS KMS                 |
+| At Rest     | AES-256              | Azure KMS                 |
 
 ---
 
@@ -218,7 +220,7 @@ While a centralized MCP-based architecture may offer long-term advantages, build
 
 | Category       | Requirement                  | Verification Method          |
 |----------------|------------------------------|------------------------------|
-| Performance    | <3s P95 query latency        | Locust load testing          |
+| Performance    | <5s P95 query latency        | Load testing          |
 | Availability   | 99.95% uptime                | Prometheus alerts            |
 | Compliance     | FFIEC, GDPR, SOC2 Type II    | Quarterly third-party audits |
 
