@@ -164,7 +164,7 @@ This approach allows us to:
 While a centralized MCP-based architecture may offer long-term advantages, building it now would **delay impact** and **increase risk**. We will **reassess the need for a centralized orchestration layer in 12 months**, based on adoption, usage patterns, and governance needs.
 
 
-![AI Architecture](docs/ai-architecture.svg)
+![AI Architecture](docs/Compass dev Tolling.drawio.svg)
 
 ---
 ## Component Design <a name="component-design"></a>
