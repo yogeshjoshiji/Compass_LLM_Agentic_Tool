@@ -1,0 +1,4 @@
+*.svg text eol=lf
+*.drawio binary
+*.png binary
+*.jpg binary
