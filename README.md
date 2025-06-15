@@ -163,9 +163,12 @@ This approach allows us to:
 
 While a centralized MCP-based architecture may offer long-term advantages, building it now would **delay impact** and **increase risk**. We will **reassess the need for a centralized orchestration layer in 12 months**, based on adoption, usage patterns, and governance needs.
 
-**Natural Language to SQL**:
+**Natural Language to SQL Solution Design**:
 
 ![AI Architecture](docs/Compass_dev_Tooling.drawio.svg)
+
+**Document Retrieval Solution Design**:
+![AI Architecture](docs/DocumentRetrievalSolutionDesign.drawio.svg)
 
 ---
 ## Component Design <a name="component-design"></a>
