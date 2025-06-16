@@ -34,7 +34,6 @@ Our ability to innovate and deliver value is increasingly constrained by ineffic
 Without a scalable solution, these inefficiencies will continue to delay product delivery, inflate operational costs, and increase our exposure to compliance and audit risk.
 
 **Regulatory Constraints**:  
-- FFIEC-compliant audit trails for all AI-generated outputs  
 - Strict PII controls (SSN, account numbers) 
 ---
 
@@ -81,7 +80,7 @@ This platform targets the root causes of delivery friction: repetitive engineeri
 
 - Built with **LangChain + LangGraph** for agentic reasoning and audit-ready workflows  
 - Integrated with **Qdrant** for secure, vectorized document and schema retrieval  
-- Enforced with **FFIEC-aligned** audit logs and **PII redaction by default**  
+- **PII redaction by default**  
 - Modular, multi-LLM support (OpenAI, Azure, dbLLM) with enterprise observability
 
 By combining modular AI capabilities with compliance-grade architecture, the platform enables faster delivery, lower costs, and stronger governance—unlocking innovation without sacrificing control.
@@ -230,7 +229,7 @@ TBD
 |----------------|------------------------------|------------------------------|
 | Performance    | <5s P95 query latency        | Load testing          |
 | Availability   | 99.95% uptime                | Prometheus alerts            |
-| Compliance     | FFIEC, GDPR, SOC2 Type II    | Quarterly third-party audits |
+| Compliance     | GDPR, SOC2 Type II    | Quarterly third-party audits |
 
 ---
 
@@ -246,6 +245,5 @@ TBD
 
 ## Supporting References <a name="supporting-references"></a>
 
-- [FFIEC AI Guidance](https://www.ffiec.gov/ai-guidance.htm)
-- [LangChain Banking Compliance](https://python.langchain.com/docs/guides/compliance)
-- [Qdrant Enterprise Security](https://qdrant.tech/documentation/security/)
+- [LangChain Security](https://python.langchain.com/docs/security/)
+- [Qdrant Security](https://qdrant.tech/documentation/guides/security/)
